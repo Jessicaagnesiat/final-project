@@ -3,24 +3,24 @@
 > **Customer Retention Analysis using Exploratory Data Analysis (EDA), Cohort Analysis, and K-Means Clustering on the Brazilian E-Commerce Dataset.**
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas)
 ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikitlearn)
 ![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
 
 ---
 
-## 📌 Project Overview
+# 📌 Project Overview
 
-Customer retention is one of the most important drivers of sustainable business growth. While acquiring new customers is costly, retaining existing customers can significantly improve long-term profitability.
+Customer retention is a key driver of sustainable business growth. While acquiring new customers is costly, retaining existing customers significantly improves long-term profitability.
 
-This project analyzes customer purchasing behavior using **Exploratory Data Analysis (EDA)**, **Cohort Analysis**, and **K-Means Clustering** to identify customer retention patterns, customer segments, and business opportunities for increasing repeat purchases.
+This project analyzes customer purchasing behavior using **Exploratory Data Analysis (EDA)**, **Cohort Analysis**, and **K-Means Clustering** to uncover retention patterns, customer segments, and opportunities to increase repeat purchases.
 
-The original dataset consisted of **8 separate CSV files**, which were integrated using **PostgreSQL** before being exported to Python for data cleaning, feature engineering, exploratory analysis, cohort analysis, and customer segmentation.
+The original dataset consisted of **8 separate CSV files**. These datasets were first integrated using **PostgreSQL** before being exported to Python for data cleaning, feature engineering, exploratory analysis, cohort analysis, and customer segmentation.
 
 ---
 
-## 🎯 Business Problem
+# 🎯 Business Problem
 
 - Low customer retention and repeat purchase rate.
 - Revenue relies heavily on first-time customers.
@@ -28,27 +28,29 @@ The original dataset consisted of **8 separate CSV files**, which were integrate
 
 ---
 
-## 🎯 Project Objectives
+# 🎯 Project Objectives
 
+- Integrate multiple datasets into a unified analytical dataset.
 - Analyze customer purchasing behavior.
 - Measure customer retention using Cohort Analysis.
-- Segment customers based on purchasing behavior and delivery experience.
-- Evaluate the relationship between delivery performance and repeat purchase behavior.
-- Provide data-driven business recommendations.
+- Identify customer segments using K-Means Clustering.
+- Evaluate the impact of delivery performance on repeat purchase behavior.
+- Generate actionable business recommendations.
 
 ---
 
-## 📂 Dataset
+# 📂 Dataset
 
 **Brazilian E-Commerce Public Dataset by Olist**
 
-This dataset contains information about customers, orders, sellers, products, payments, reviews, and geolocation from a Brazilian e-commerce platform between **2016 and 2018**.
+The dataset contains information on customers, orders, products, sellers, payments, reviews, and geolocation collected from a Brazilian e-commerce platform between **2016–2018**.
 
-🔗 https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
+**Dataset Source**
+https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
 
 ---
 
-## 🛠️ Tools & Technologies
+# 🛠️ Tools & Technologies
 
 - PostgreSQL
 - Python
@@ -62,94 +64,105 @@ This dataset contains information about customers, orders, sellers, products, pa
 
 ---
 
-## 🔄 Project Workflow
+# 🔄 Project Workflow
 
-Data Integration in PostgreSQL
-        │
-        ▼
-Export Integrated Dataset
-        │
-        ▼
+```text
+8 CSV Files
+      │
+      ▼
+PostgreSQL Data Integration
+      │
+      ▼
 Data Cleaning
-        │
-        ▼
+      │
+      ▼
 Feature Engineering
-        │
-        ▼
+      │
+      ▼
 Exploratory Data Analysis
-        │
-        ▼
+      │
+      ▼
 Cohort Analysis
-        │
-        ▼
-Customer Segmentation
-(K-Means Clustering)
-        │
-        ▼
+      │
+      ▼
+K-Means Clustering
+      │
+      ▼
 Business Insights
-        │
-        ▼
+      │
+      ▼
 Business Recommendations
 ```
 
 ---
 
-## 📊 Dashboard
+# 📊 Dashboard
 
-> Add your Tableau dashboard screenshot here.
+> *(Insert your Tableau dashboard screenshot here.)*
 
 ![Dashboard](images/dashboard.png)
 
 ---
 
-## 🔍 Key Findings
+# 📈 Project Results
+
+| Metric | Result |
+|---------|--------|
+| Total Revenue | 13.26M |
+| Total Orders | 95K |
+| Customer Segments | 5 |
+| Delivery Delay Rate | 8.3% |
+
+---
+
+# 🔍 Key Findings
 
 - Most customers were **one-time buyers**, resulting in low customer retention.
 - The **Loyal Customer** segment generated the highest share of revenue.
 - Delivery performance significantly influenced repeat purchase behavior.
-- Customer segmentation identified **five distinct customer segments** for targeted retention strategies.
+- Five distinct customer segments were identified for targeted retention strategies.
 
 ---
 
-## 👥 Customer Segments
+# 👥 Customer Segments
 
-| Customer Segment | Characteristics |
-|------------------|-----------------|
-| Dormant Customers | Low engagement and high recency. |
-| New Customers (Poor Delivery Experience) | First-time buyers affected by delivery delays. |
-| High-Value Customers | High spending customers with strong revenue contribution. |
-| Loyal Customers | Repeat buyers generating the highest revenue. |
-| New Customers (Fast Delivery) | New customers with positive delivery experience and high retention potential. |
+| Customer Segment | Description |
+|------------------|-------------|
+| Dormant Customers | Inactive customers requiring re-engagement campaigns. |
+| New Customers (Poor Delivery Experience) | First-time customers affected by delivery delays. |
+| High-Value Customers | Customers with high spending and strong revenue contribution. |
+| Loyal Customers | Repeat customers contributing the highest revenue. |
+| New Customers (Fast Delivery) | New customers with high retention potential. |
 
 ---
 
-## 💡 Business Recommendations
+# 💡 Business Recommendations
 
-| Customer Segment | Recommendation |
-|------------------|---------------|
+| Customer Segment | Business Recommendation |
+|------------------|-------------------------|
 | 💤 Dormant Customers | Launch personalized re-engagement campaigns through email, push notifications, and limited-time promotions. |
-| 🚚 New Customers (Poor Delivery Experience) | Improve delivery performance and provide compensation or second-purchase incentives. |
-| 💎 High-Value Customers | Offer VIP benefits, exclusive promotions, and personalized services to strengthen loyalty. |
-| ❤️ Loyal Customers | Expand loyalty programs, cross-selling, and exclusive rewards to maximize customer lifetime value. |
+| 🚚 New Customers (Poor Delivery Experience) | Improve delivery performance and offer compensation or second-purchase incentives. |
+| 💎 High-Value Customers | Provide VIP benefits, exclusive offers, and personalized services. |
+| ❤️ Loyal Customers | Strengthen loyalty programs, exclusive rewards, and cross-selling initiatives. |
 | 🌱 New Customers (Fast Delivery) | Encourage second purchases through personalized follow-up campaigns and promotional offers. |
 
 ---
 
-## 📈 Dashboard Features
+# 📈 Dashboard Features
 
-- Revenue Analysis
-- Order Analysis
+- Revenue Overview
+- Customer Overview
 - Product Performance
 - Delivery Performance
-- Customer Retention (Cohort Analysis)
+- Cohort Analysis
 - Customer Segmentation
 - Customer Behavior Analysis
 
 ---
 
-## 📁 Repository Structure
+# 📁 Repository Structure
 
-```
+```text
 Customer-Retention-Analysis
 │
 ├── data/
@@ -170,28 +183,25 @@ Customer-Retention-Analysis
 
 ---
 
-## 🚀 Business Impact
+# 🚀 Business Impact
 
 This project demonstrates how customer analytics can help businesses:
 
 - Improve customer retention.
 - Increase repeat purchases.
 - Identify high-value customer segments.
-- Develop targeted marketing strategies.
-- Support data-driven business decision making.
+- Support targeted marketing strategies.
+- Enable data-driven business decisions.
 
 ---
 
-## 👩‍💻 Author
+# 👩‍💻 Author
 
 **Jessica Agnesia Tataung**
 
-📧 Email: jessicaagnesiat@gmail.com
-
-💼 LinkedIn: https://www.linkedin.com/in/jessicaagnesiat/
-
-🌐 Portfolio: https://jessicaagnesiat.github.io/portofolio-data-scientist/
+- LinkedIn: https://www.linkedin.com/in/jessicaagnesiat/
+- Portfolio: https://jessicaagnesiat.github.io/portofolio-data-scientist/
 
 ---
 
-⭐ If you find this project helpful, don't forget to give this repository a star!
+⭐ If you found this project useful, feel free to give it a star!
