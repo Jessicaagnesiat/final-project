@@ -18,6 +18,8 @@ This project analyzes customer purchasing behavior using **Exploratory Data Anal
 
 The original dataset consisted of **8 separate CSV files**, which were integrated using **PostgreSQL** before being exported to Python for data cleaning, feature engineering, exploratory analysis, cohort analysis, and customer segmentation.
 
+---
+
 ## 🎯 Business Problem
 
 - Low customer retention and repeat purchase rate.
