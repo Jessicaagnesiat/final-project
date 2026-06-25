@@ -16,8 +16,7 @@ Customer retention is one of the most important drivers of sustainable business 
 
 This project analyzes customer purchasing behavior using **Exploratory Data Analysis (EDA)**, **Cohort Analysis**, and **K-Means Clustering** to identify customer retention patterns, customer segments, and business opportunities for increasing repeat purchases.
 
-The original dataset consisted of 8 separate CSV files. These datasets were first integrated using PostgreSQL before being processed further in Python for analysis, cohort analysis, and customer segmentation.
----
+The original dataset consisted of **8 separate CSV files**, which were integrated using **PostgreSQL** before being exported to Python for data cleaning, feature engineering, exploratory analysis, cohort analysis, and customer segmentation.
 
 ## 🎯 Business Problem
 
